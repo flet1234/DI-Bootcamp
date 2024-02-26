@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+section{
+    width: 95%;
+    height: 70%;
+    display: block;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+article{
+    display: inline-block;
+    width: 20%;
+    height: 100%; 
+    margin-left: 4%;
+}
+.card{
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+img{
+    width: 100%;   
+}
+.new{
+   color: white;
+   font-weight: bold;
+   text-transform: uppercase;
+   display: inline-block;
+   position: absolute;
+   padding: 3% 1%;
+   border-radius:100%;
+   background-color: cadetblue;
+   top: 10%;
+   left: 2%;
+}
+.sale{
+    display: inline-block;
+    color: white;
+    padding: 3% 1%;
+    border-radius: 100%;
+    background-color: red;
+    font-weight: bold;
+    position: absolute;
+    left: 80%;
+    top: 10%;
+}
+.textbellow{
+    height: 30%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+h5{
+    font-weight: 100;
+    margin-top: 10px; 
+}
+.price{
+    margin-top: 10px;
+    color: cadetblue;
+}
+span{
+    text-decoration: line-through;
+    color: gray;
+    margin-top: 10px;
+}
+button{
+    margin-top: 10px;
+    padding: 10px;
+}
