@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+header{
+    background-color: black;
+    height: 70px;
+}
+nav{
+    height: 100%;
+    position: relative;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+}
+li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.fa-crown{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+}
+.navlink{
+   color: white;
+   text-decoration: none;
+}
+footer{
+    background-color: cadetblue;
+    height: 70px;
+    text-align: center;
+}
+h6{
+    font-size: 24px;
+    padding-top: 20px;
+}
+section{
+    width: 100%;
+    height: calc(100vh - 140px);
+    background-image: url(./resources/cristine-enero-Hh5SE7THZFI-unsplash.jpg);
+    background-size: cover;
+}
+form{
+    height: 80%;
+    width: 70%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+label{
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+    background-color: rgba(21, 125, 125, 0.5);
+    border-radius: 5px;
+}
+input{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.477);
+    margin-bottom: 10px;
+    width: 200px;
+    color: black;
+    border: solid 1px cadetblue;
+    border-radius: 5px;
+}
+.submit{
+    margin: auto;
+    width: 150px;
+    color: black;
+    font-weight: bold;
+}

@@ -4,12 +4,31 @@
     box-sizing: border-box;
     font-size: 18px;
 }
-nav{
+header{
     background-color: black;
     height: 70px;
 }
+nav{
+    height: 100%;
+    position: relative;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+}
+li{
+    display: inline-block;
+    margin-left: 20px;
+}
 .fa-crown{
-    margin: 35px 80vw 30px 20px;
+    position: absolute;
+    left: 10%;
+    top: 50%;
 }
 .navlink{
    color: white;
