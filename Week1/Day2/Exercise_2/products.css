@@ -2,29 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 18px;
 }
-body{
-    width: 100vw;
-    height: 100vh;
-}
-section{
-    width: 95%;
-    height: 70%;
-    display: block;
-    margin-right: 5%;
-    margin-top: 20px;
+.container{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 article{
     display: inline-block;
-    width: 20%;
-    height: 100%; 
-    margin-left: 4%;
+    width: 400px;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px ;
+    margin-top: 30px;
+    position: relative;
 }
 .card{
     width: 100%;
     height: 70%;
-    position: relative;
 }
 img{
     width: 100%;   
@@ -35,22 +32,22 @@ img{
    text-transform: uppercase;
    display: inline-block;
    position: absolute;
-   padding: 3% 1%;
+   padding: 5% 1%;
    border-radius:100%;
    background-color: cadetblue;
-   top: 10%;
+   top: 8%;
    left: 2%;
 }
 .sale{
     display: inline-block;
     color: white;
-    padding: 3% 1%;
+    padding: 5% 1%;
     border-radius: 100%;
     background-color: red;
     font-weight: bold;
     position: absolute;
     left: 80%;
-    top: 10%;
+    top: 8%;
 }
 .textbellow{
     height: 30%;
@@ -74,4 +71,102 @@ span{
 button{
     margin-top: 10px;
     padding: 10px;
+    border-radius: 5px;
+    border: black solid 1px;
+    background-color: white;
+    color: gray;
+    text-transform: uppercase;  
 }
+button:hover{
+    background-color: cadetblue;
+    color: white;
+    border: cadetblue solid 1px;
+}
+.pseudocontainer:hover:after{
+    content: " ";
+    color: #fff;
+    position: absolute;
+    background: url(./resources/view.png) #fff;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    height: 25px;
+    width: 25px;
+    z-index: 1;
+    left: 25%;
+    top: 30%;
+}
+.pseudocontainer:hover:before{
+    content: " ";
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    left: 45%;
+    top: 30%;
+    background: url(./resources/bag.png) #fff;
+    background-size: 50% ;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    height: 25px;
+    width: 25px;
+}
+.card:hover:after{
+    content: " ";
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    right: 20%;
+    top: 30%;
+    background: url(./resources/shopping-cart.png) #fff;
+    background-size: 50% ;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    height: 25px;
+    width: 25px;
+}
+@media only screen and (min-width: 768px){
+    article{
+        display: inline-block;
+        width: 350px;
+        height: 100%;
+        margin-left: 10px;
+        margin-right: 10px ;
+        margin-top: 30px;
+    }
+
+}
+@media only screen and (min-width: 992px){
+    article{
+        display: inline-block;
+        width: 215px;
+        height: 100%;
+        margin-left: 10px;
+        margin-right: 10px ;
+        margin-top: 30px;
+    }
+    *{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    article{
+        display: inline-block;
+        width: 170px;
+        height: 100%;
+        margin-left: 10px;
+        margin-right: 10px ;
+        margin-top: 30px;
+    }
+    .container{
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    *{
+        font-size: 12px;
+    }
+}
+    
