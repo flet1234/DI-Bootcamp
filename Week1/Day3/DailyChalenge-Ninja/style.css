@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containerflex{
+    display: flex;
+    height: 96vh;
+    width: 96vw;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container{
+    display: grid;
+    height: 24vh;
+    width: 20vw;
+    grid-template-rows: repeat(3 , 1fr);
+    grid-template-columns: repeat(3  , 1fr);
+    gap: 3px;
+    margin: 0px 3px 3px 0px;
+
+}
+.item2{
+    background-color: bisque;
+}
+.item1{
+    background-color: orange;
+}
+.item3{
+    background-color: brown;
+}
