@@ -4,17 +4,39 @@
     box-sizing: border-box;
 }
 body{
-    background-color: whitesmoke;
+    margin-top: 50px;
     text-align: center;
 }
-section{
-    margin: 50px auto;
-    width: 300px;
+.maincontainer{
+    width: 680px;
     height: 600px;
-    
+    text-align: center;
+    margin: auto;
+}
+.section1{
+    width: 340px;
+    height: 500px;
+    background-color: whitesmoke;
+    display: inline-block;
+    padding: 20px;
+}
+.section2{
+    background-image: linear-gradient(to bottom right, rgba(34,33,47,1), rgba(150,39,170,1));
+    width: 340px;
+    height: 500px;
+    background-size: contain;
+    float: right;
+    padding-top: 20px;
 }
 h1{
     font-size: 36px;
+}
+h2{
+    color:white;
+    font-size: 64px;
+}
+.icon{
+    font-size: 100px;
 }
 .input{
     border: none;
@@ -30,13 +52,13 @@ label{
     color: gray;
     width: 150px;
 }
-a{
+.aleft{
     width: 150px;
     color: gray;
     text-decoration: none;
     margin-left: 70px;
 }
-button{
+.buttonleft{
     width: 300px;
     margin-top: 20px;
     background-color: rgb(150, 39, 170);
@@ -64,6 +86,10 @@ span{
     background-color: whitesmoke;
     color: gray;
 }
+.plogin{
+    color: white;
+    font-size: 20px;
+}
 .container{
     margin-top: 20px;
     font-size: 30px;
@@ -75,4 +101,23 @@ i{
     color: gray;
     margin-top: 60px;
     font-size: 12px;
+}
+.buttonright{
+    
+    padding: 15px;
+    border-radius: 100px;
+    background-color: rgba(165, 42, 42, 0);
+    border: solid 1px white;
+    margin-top: 10px;
+}
+.aright{
+    text-decoration: none; 
+    text-transform: uppercase;
+    color: white;
+}
+.fa-arrow-right{
+    border: solid 2px white;
+    border-radius: 50%;
+    padding: 3px 4px;
+    margin-left: 3px;
 }
