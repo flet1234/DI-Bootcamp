@@ -19,6 +19,7 @@ body{
     background-color: whitesmoke;
     display: inline-block;
     padding: 20px;
+    position: relative;
 }
 .section2{
     background-image: linear-gradient(to bottom right, rgba(34,33,47,1), rgba(150,39,170,1));
@@ -99,8 +100,10 @@ i{
 }
 .copyright {
     color: gray;
-    margin-top: 60px;
     font-size: 12px;
+    position: absolute;
+    bottom: 20px;
+    left: 45%;
 }
 .buttonright{
     
