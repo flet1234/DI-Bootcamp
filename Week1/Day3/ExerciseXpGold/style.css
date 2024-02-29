@@ -4,23 +4,22 @@
     box-sizing: border-box;
 }
 body{
-    width: 98vw;
-    height: 95vh;
+    width: 100vw;
+    height: auto;
     background-image: url(./continents-28616_1920.png);
-    background-size: 100vw 100vh;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .container{
     display: flex;
     width: 96%;
-    height: 96%;
     flex-direction: column;
-    margin: 2% 2% 2% 2%; 
+    margin: 20px; 
 }
 .header{
     display: flex;
     width: 100%;
-    height: 45%;
+    height: 200px;
     flex-direction: column;
     margin-bottom: 5%;
 }
@@ -29,32 +28,37 @@ body{
     flex-direction: column;
     width: 100%;
     height: 50%;
+    margin-top: 20px;
 }
 .headerdivs{
     display: flex;
-    width: 100%;
-    height: 50%;
+    width: 100%;    
+    height: 200px;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 .points{
     display: flex;
-    width: 25%;
-    height: 100%;
+    width: 200px;
+    height: 200px;
     flex-direction: column;
     align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
 }
 .main{
     display: flex;
     width: 100%;
-    height: 50%;
-    justify-content: space-evenly;
+    height: 350px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .maindiv{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25%;
+    width: 300px;
     height: 70%;
     position: relative;
     flex-wrap: wrap;
@@ -105,7 +109,7 @@ h3{
     background-color: #47C1BF;
 }
 .texttop{
-    font-size: 16px;
+    font-size: 18px;
     padding: 20px;
     color: darkblue;
 }
@@ -123,4 +127,33 @@ h4{
 }
 .textbottom{
    color: white;
+}
+@media only screen and (max-width:768px){
+    .main{
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        margin-top: 20px;
+
+    }
+    .maindiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        height: 250px;
+        position: relative;
+        flex-wrap: wrap;
+    }
+    .middle{
+        align-self: center;
+    }
+    .headerdivs{
+        display: none;
+    }
 }
