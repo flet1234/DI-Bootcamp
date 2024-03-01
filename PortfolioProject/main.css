@@ -94,5 +94,8 @@ footer{
         transition: 2s;
         transition-timing-function: ease-in-out;
     }
+    #portfoliobig{
+        display: flex !important;
+    }
 }
 
