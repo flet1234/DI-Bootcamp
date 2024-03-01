@@ -1,0 +1,24 @@
+header{
+    background-image: url(./portfolio_setup/images/web-design-2038872.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title{
+    color: #27CBED;
+    text-shadow: black 1px 1px;
+}
+nav a, .carouseltext{
+    color: #27CBED !important;
+    text-shadow: black 1px 1px;
+}   
+main{
+    background-color: whitesmoke;
+}
+.photo{
+    width: 70%;
+    margin: auto;
+    border-radius: 50%;
+}
+.portfolio{
+    height: 300px;
+}
