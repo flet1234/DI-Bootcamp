@@ -18,7 +18,7 @@
         />
     </head>
 
-    <body>
+    <body border->
         <header>
             <!-- place navbar here -->
             <nav class="navbar navbar-expand-md bg-tranparency">
@@ -48,13 +48,13 @@
                     </div>
                 </div>
             </nav>
-            <div class="offset-1 col-10 mt-5 title d-flex flex-column">
+            <div class="offset-1 col-10 col-md-6 offset-lg-1 title d-flex flex-column">
                 <h1>Hello, Welcome To My Portfolio Website</h1>
                 <p class="fs-6">I dont have anithyng, neither hope, neither expirience. Please hire me daddy! I used to be and adventurer but...</p>
                 <a
                     name="See more"
                     id="button-header"
-                    class="btn btn-outline-info mb-5 col-4"
+                    class="btn btn-info mb-5 col-4 text-light"
                     href="#"
                     role="button"
                     >See more</a
@@ -63,10 +63,12 @@
         </header>
         <main class="container-fluid d-flex flex-column pt-3" >  
             <div class="about d-flex flex-column">
-                <h2 class="fs-3 text-center mb-3">About me</h2>
-                <div class="container-fluid d-flex flex-column justify-content-center">
-                    <img class="photo" src="./portfolio_setup/images/face1.jpg" alt="">
-                    <p class="text-center border-bottom border-info border-3">Web Developer</p>
+                <h2 class="fs-3 text-center mb-4">About me</h2>
+                <div class="container-fluid d-flex flex-column flex-md-row col-lg-10">
+                    <div class="container-fluid d-flex flex-column col-md-4">
+                        <img class="photo" src="./portfolio_setup/images/face1.jpg" alt="">
+                        <p class="text-center border-bottom border-info border-3">Web Developer</p>
+                    </div>
                     <div class="container-fluid d-flex flex-column">
                         <h3 class="fs-4 text-center">Maksim Gold</h3>
                         <p class="fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi quod quisquam minima 
@@ -75,9 +77,20 @@
                     </div>
                 </div>
             </div>
-            <div class="about d-flex flex-column">
+            <div class="d-flex flex-column col-lg-10 offset-lg-1" id="portfoliobig">
                 <h2 class="fs-3 text-center mb-3">Portfolio</h2>
-                <div id="carousel" class="carousel slide">
+                <div class="d-flex flex-wrap justify-content-evenly">
+                    <img src="./portfolio_setup/images/portfolio/port8.png" class="portfolioimg" alt="...">
+                    <img src="./portfolio_setup/images/portfolio/port11.png" class="portfolioimg" alt="...">
+                    <img src="./portfolio_setup/images/portfolio/port3.png" class="portfolioimg" alt="...">
+                    <img src="./portfolio_setup/images/portfolio/port13.png" class="portfolioimg" alt="...">
+                    <img src="./portfolio_setup/images/portfolio/port6.png" class="portfolioimg" alt="...">
+                    <img src="./portfolio_setup/images/portfolio/port7.png" class="portfolioimg" alt="...">
+                </div>
+            </div>
+            <div class="d-flex flex-column col-10 mx-auto" id="portfoliomob">
+                <h2 class="fs-3 text-center mb-3">Portfolio</h2>
+                <div id="carousel" class="carousel carousel-dark slide">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -87,35 +100,35 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./portfolio_setup/images/portfolio/port11.png" class="d-block w-100 portfolio" alt="...">
+                            <img src="./portfolio_setup/images/portfolio/port11.png" class="d-block w-100 portfolioimg" alt="...">
                             <div class="carousel-caption">
                                 <h5 class="carouseltext fs-5">Pizza site</h5>
                                 <p class="carouseltext fs-6">Work for John from Pizza Maniac's</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./portfolio_setup/images/portfolio/port8.png" class="d-block w-100 portfolio" alt="...">
+                            <img src="./portfolio_setup/images/portfolio/port8.png" class="d-block w-100 portfolioimg" alt="...">
                             <div class="carousel-caption">
                                 <h5 class="carouseltext fs-5">Second slide label</h5>
                                 <p class="carouseltext fs-6">Some representative placeholder content for the second slide.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./portfolio_setup/images/portfolio/port6.png" class="d-block w-100 portfolio" alt="...">
+                            <img src="./portfolio_setup/images/portfolio/port6.png" class="d-block w-100 portfolioimg" alt="...">
                             <div class="carousel-caption">
                                 <h5 class="carouseltext fs-5">Third slide label</h5>
                                 <p class="carouseltext fs-6">Some representative placeholder content for the third slide.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./portfolio_setup/images/portfolio/port3.png" class="d-block w-100 portfolio" alt="...">
+                            <img src="./portfolio_setup/images/portfolio/port3.png" class="d-block w-100 portfolioimg" alt="...">
                             <div class="carousel-caption">
                                 <h5 class="carouseltext fs-5">Third slide label</h5>
                                 <p class="carouseltext fs-6">Some representative placeholder content for the third slide.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./portfolio_setup/images/portfolio/port13.png" class="d-block w-100 portfolio" alt="...">
+                            <img src="./portfolio_setup/images/portfolio/port13.png" class="d-block w-100 portfolioimg" alt="...">
                             <div class="carousel-caption">
                                 <h5 class="carouseltext fs-5">Third slide label</h5>
                                 <p class="carouseltext fs-6">Some representative placeholder content for the third slide.</p>
@@ -132,10 +145,105 @@
                     </button>
                 </div>
             </div>
+            <div class="d-flex flex-column col-lg-10 mx-auto" id="blognews">
+                <h2 class="fs-3 text-center m-3">Blog</h2>
+                <div class="d-flex flex-wrap justify-content-evenly container-fluid">
+                    <div class="d-flex flex-column col-md-3">
+                        <img class="imgblog mb-3" src="./portfolio_setup/images/blog/images.jpg" alt="">
+                        <h4>Post Title</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Placeat, reprehenderit! <a class="text-decoration-none d-block" href="">Read more</a></p>
+                    </div>
+                    <div class="d-flex flex-column  col-md-3">
+                        <img class="imgblog mb-3"id="list-item-2" src="./portfolio_setup/images/blog/imag2.jpg" alt="">
+                        <h4>Post Title</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Placeat, reprehenderit!  <a class="text-decoration-none d-block" href="">Read more</a></p>
+                    </div>
+                    <div class="d-flex flex-column  col-md-3">
+                        <img class="imgblog mb-3"id="list-item-3" src="./portfolio_setup/images/blog/polit.jpg" alt="">
+                        <h4>Post Title</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Placeat, reprehenderit!
+                        <a class="text-decoration-none d-block" href="">Read more</a></p> 
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column" id="blognewsmob">
+                <h2 class="fs-3 text-center m-3">Blog</h2>
+                <div class="blog d-flex flex-column">
+                    <div class="row">
+                        <div class="col-3 p-1">
+                          <div id="blog" class="list-group">
+                            <a class="list-group-item list-group-item-action" href="#blog1">Blog 1</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-2">Blog 2</a>
+                            <a class="list-group-item list-group-item-action" href="#list-item-3">Blog 3</a>
+                          </div>
+                        </div>
+                        <div class="col-9 blogcont">
+                          <div data-bs-spy="scroll" data-bs-target="#blog" data-bs-smooth-scroll="true" class="scrollspy" tabindex="0">
+                            <div class="mb-3 border-bottom border-info border-2" id="blog1">
+                                <img class="imgblogmob mb-3" src="./portfolio_setup/images/blog/images.jpg" alt="">
+                                <h4>Post Title</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, reprehenderit! <a class="text-decoration-none"" href="">Read more</a></p>   
+                            </div>
+                            <div class="mb-3 border-bottom border-info border-2" id="list-item-2">
+                                <img class="imgblogmob mb-3"id="list-item-2" src="./portfolio_setup/images/blog/imag2.jpg" alt="">
+                                <h4>Post Title</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, reprehenderit!  <a class="text-decoration-none" href="">Read more</a></p>
+                            </div>
+                            <div class="mb-3 border-bottom border-info border-2" id="list-item-3">
+                                <img class="imgblogmob mb-3"id="list-item-3" src="./portfolio_setup/images/blog/polit.jpg" alt="">
+                                <h4>Post Title</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, reprehenderit! <a class="text-decoration-none" href="">Read more</a></p> 
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column col-md-10 col-lg-8 mx-auto">
+                <h2 class="fs-3 text-center m-3">Our Team</h2>
+                <div class="d-flex flex justify-content-evenly flex-wrap">
+                    <div class="teamimg d-flex flex-column">
+                        <img class="border-end border-info border-2" src="./portfolio_setup/images/face1.jpg" alt="">
+                        <h6 class="fs-5 m-0 p-0 border-end border-info border-2">David</h6>
+                        <h6 class="fs-5 m-0 p-0 text-end border-bottom border-end border-info border-2">Shinker</h6>
+                    </div>
+                    <div class="teamimg d-flex flex-column">
+                        <img class="border-start border-info border-2" src="./portfolio_setup/images/face2.jpg" alt="">
+                        <h6 class="fs-5 m-0 p-0 border-start border-info border-2">Davela</h6>
+                        <h6 class="fs-5 m-0 p-0 text-end border-bottom border-start border-info border-2">Pinker</h6>
+                    </div>
+                    <div class="teamimg d-flex flex-column">
+                        <img class="border-end border-info border-2" src="./portfolio_setup/images/face3.jpg" alt="">
+                        <h6 class="fs-5 m-0 p-0 border-end border-info border-2">Davelich</h6>
+                        <h6 class="fs-5 m-0 p-0 text-end border-bottom border-end border-info border-2">Tinker</h6>
+                    </div>
+                    <div class="teamimg d-flex flex-column">
+                        <img class="border-start border-info border-2" src="./portfolio_setup/images/face1.jpg" alt="">
+                        <h6 class="fs-5 m-0 p-0 border-start border-info border-2">Davelun</h6>
+                        <h6 class="fs-5 m-0 p-0 text-end border-bottom border-start border-info border-2">Kinker</h6>
+                    </div>
+                </div>
+            </div>
         </main>
-        <footer>
-            <!-- place footer here -->
-
+            <!-- place footer here --> 
+        <footer class="container-fluid d-flex py-4 col-md-10 col-lg-8 mx-auto">   
+            <div class="d-flex flex-column col-4 mt-5 align-items-center fs-2">
+                <h2 class="fs-4 text-center" >Get in Touch</h2>
+                <div>
+                    <a href=""><i class="fa-brands fa-github fa-lg" style="color: #27cbed;"></i></a> 
+                    <a href=""><i class="fa-brands fa-linkedin fa-lg" style="color: #27cbed;"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook fa-lg" style="color: #27cbed;"></i></a>
+                </div>
+            </div>
+            <div class="d-flex flex-column col-8 gap-3 align-items-center">
+                <input type="text" class="form-control" id="name" placeholder="Your name">
+                <input type="email" class="form-control" id="email" placeholder="Email">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <button type="submit" class="btn btn-info text-light col-6">Submit</button>
+            </div>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script
@@ -149,5 +257,6 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+        <script src="https://kit.fontawesome.com/89bf9d3f4a.js" crossorigin="anonymous"></script>
     </body>
 </html>

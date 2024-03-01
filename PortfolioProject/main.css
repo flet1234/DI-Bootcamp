@@ -3,14 +3,17 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.title{
-    color: #27CBED;
-    text-shadow: black 1px 1px;
+.title , h2{
+    color: #27CBED !important; 
+    text-shadow: black 1px 1px !important;
 }
 nav a, .carouseltext{
     color: #27CBED !important;
     text-shadow: black 1px 1px;
-}   
+} 
+body{
+    background-color: whitesmoke !important;
+}  
 main{
     background-color: whitesmoke;
 }
@@ -19,6 +22,77 @@ main{
     margin: auto;
     border-radius: 50%;
 }
-.portfolio{
+.portfolioimg{
     height: 300px;
 }
+.imgblogmob{
+    width: 100%;
+    height: 200px;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 5%;
+}
+.imgblog{
+    width: 100%;
+    height: 150px;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 5%;
+}
+.blogcont{
+    height: 300px;
+    overflow-y: scroll;
+}
+.teamimg{
+    width: 45%;
+    margin: 5px;
+}
+footer{
+    background-color:whitesmoke;
+}
+@media only screen and (max-width:767px){
+    #blognews{
+        display:none !important;
+    }
+    #portfoliobig{
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .portfolioimg{
+        height: 500px;
+    }
+    #blognewsmob{
+        display:none !important;
+    }
+    .teamimg{
+        width: 20%;
+        margin: 5px;
+    }
+    #portfoliobig{
+        display: none !important;
+    }
+}
+@media only screen and (min-width:992px){
+    #blognewsmob{
+        display:none !important;
+    }
+    .teamimg{
+        width: 20%;
+        margin: 5px;
+    }
+    #portfoliomob{
+        display: none !important;
+    }
+    .portfolioimg{
+        width: 30%;
+        height: 200px;
+        margin: 5px;
+        box-shadow: 2px 2px 5px black;
+    }
+    .portfolioimg:hover{
+        scale: 1.5;
+        transition: 2s;
+        transition-timing-function: ease-in-out;
+    }
+}
+
