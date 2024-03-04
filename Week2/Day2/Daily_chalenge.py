@@ -10,12 +10,12 @@
 
 # Exercise 2
 
-user_input=input('Input string with duplicate consecutive letters: ')
-finished_list=['']
+# user_input=input('Input string with duplicate consecutive letters: ')
+# finished_list=['']
 
-for letter in user_input:
-    if letter not in finished_list[-1]:
-        finished_list.append(letter)
-finished_list.pop(0)
-print(''.join(finished_list))     
+# for letter in user_input:
+#     if letter not in finished_list[-1]:
+#         finished_list.append(letter)
+# finished_list.pop(0)
+# print(''.join(finished_list))     
      
