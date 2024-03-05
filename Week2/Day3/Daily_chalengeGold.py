@@ -3,7 +3,7 @@
 # alphabet_with_commas=alphabet+',.!?1234567890 '
 
 # def encrypt():
-#     user_string=input('Hi please inpust that u want to encrypt: ').lower()
+#     user_string=input('Hi please input that u want to encrypt: ').lower()
 #     position=int(input('Input step for which u want to encrypt(nefative integer to the left and positive to the right): '))
 #     new_string=''
 #     for letter in user_string:
@@ -20,7 +20,7 @@
 #     print(f'Your encrypted result is {new_string}')
 
 # def decrypt():
-#     user_string=input('Hi please inpust that u want to decrypt: ').lower()
+#     user_string=input('Hi please input that u want to decrypt: ').lower()
 #     position=int(input('Input step for which u need to decrypt(negative integer to the left and "+" to the right): '))
 #     old_string=''
 #     for letter in user_string:
