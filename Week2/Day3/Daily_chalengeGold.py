@@ -1,6 +1,6 @@
 # import string
 # alphabet=string.ascii_lowercase
-# alphabet_with_commas=alphabet+',.!? '
+# alphabet_with_commas=alphabet+',.!?1234567890 '
 
 # def encrypt():
 #     user_string=input('Hi please inpust that u want to encrypt: ').lower()
