@@ -19,7 +19,6 @@
 
 # count=0
 # newmatrix=[]
-# newsemitrix=[]
 # while count!=3:
 #     for item in matrix:
 #         newmatrix.append(item[count])
