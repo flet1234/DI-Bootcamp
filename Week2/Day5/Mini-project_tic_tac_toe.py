@@ -155,7 +155,7 @@ def tik_tak_toe():
                 wincondition,gameon=we_get_win_cond()
             elif field_points['column3_row1']==field_points['column2_row2']==field_points['column1_row3']==side:
                 wincondition,gameon=we_get_win_cond()
-            if (' ') not in field_points.values():
+            if (' ') not in field_points.values() and gameon==True:
                 print('Its a draw')
                 display_field(field_points)
                 wincondition,gameon=we_get_win_cond()
