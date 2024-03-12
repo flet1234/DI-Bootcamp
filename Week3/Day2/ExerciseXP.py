@@ -75,8 +75,6 @@
 #         self.last_name=last_name
 
 #     def born(self,**child):
-#         cell={}
-#         cell.update(child)
 #         self.members.append(child)
 #         print('Congratulations the child was born')
 

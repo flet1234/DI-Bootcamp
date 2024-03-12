@@ -59,7 +59,7 @@
 
 
 # p.getVisibleItems()
-# p.nextPage()
+# p.nextPage().nextPage().nextPage()
 # p.getVisibleItems()
 # p.previousPage()
 # p.getVisibleItems()
