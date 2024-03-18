@@ -1,0 +1,21 @@
+-- SELECT count(title) FROM film WHERE rating='G'
+-- SELECT count(title) FROM film WHERE rating='PG-13'
+-- SELECT count(title) FROM film WHERE rating='R'
+-- SELECT count(title) FROM film WHERE rating='NC-17'
+-- SELECT count(title) FROM film WHERE rating='PG-13'
+-- SELECT DISTINCT title,rating FROM film WHERE rating<='PG'
+-- SELECT title ,length FROM film WHERE rating<='PG' and length<120 and rental_rate<3 ORDER BY title ASC
+-- SELECT * FROM customer
+-- 524	1	"Jared"	"Ely"	"jared.ely@sakilacustomer.org"	530	true
+-- UPDATE customer
+-- SET first_name='Maksim', last_name='Gold',email='flet1908@gmail.com'
+-- WHERE customer_id=524
+-- SELECT * FROM customer WHERE customer_id = 524 
+-- SELECT address.address, customer.first_name FROM address
+-- JOIN customer
+-- ON address.address_id = customer.address_id
+-- WHERE customer.first_name = 'Maksim'
+-- UPDATE address 
+-- SET address='DI Building 909 Tel Aviv'
+-- WHERE address_id = 530;
+-- SELECT * FROM address WHERE address_id=530
