@@ -89,18 +89,3 @@ while gameon==True:
                             print('You are now logged in')
                             gameon=False
                             break
-
-# def save(self):
-#         try:
-#             connection=psycopg2.connect(host=HOSTNAME,user=USERNAME,password=PASSWORD,dbname=DATABASE)
-#             cursor=connection.cursor()
-#             query = f"INSERT INTO {self.tablename} (item_name, item_price) VALUES (%s, %s)"
-#             cursor.execute(query, (self.name, self.price))
-#             connection.commit()
-#             return True
-#         except psycopg2.Error as e:
-#             print("Eror while conecting!")
-#         finally:
-#             if connection:
-#                 cursor.close()
-#                 connection.close()
