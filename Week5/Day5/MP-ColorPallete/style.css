@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-top: 10px;
+}
+section {
+    height: 600px;
+    width: 90vw;
+    border: 1px black solid;
+    margin: auto;
+    display: flex;
+}
+#colorpallete {
+    width: 20%;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#grid {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
