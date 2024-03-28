@@ -53,6 +53,9 @@ for (item=0;item<2500;item++){
     newDiv.addEventListener('click',takeColor)
     document.getElementById('grid').appendChild(newDiv)}
 
+document.body.addEventListener('mousedown',mouseDown)
+document.body.addEventListener('mouseup',mouseUp)
+
 let msDown=false
 
 function mouseDown(){
