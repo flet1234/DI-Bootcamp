@@ -58,23 +58,23 @@ document.body.addEventListener('mouseup',mouseUp)
 
 let msDown=false
 
-function mouseDown(){
-    event.preventDefault()
+function mouseDown(e){
+    e.preventDefault()
     return msDown=true
 }
 
-function mouseUp(){
-    event.preventDefault()
+function mouseUp(e){
+    e.preventDefault()
     return msDown=false
 }
 
 function takeColors(e){
-    event.preventDefault()
+    e.preventDefault()
     if(msDown){
     e.target.style.backgroundColor=pickedColor   
     }
 }
 function takeColor(e){
-    event.preventDefault()
+    e.preventDefault()
     e.target.style.backgroundColor=pickedColor   
 }
