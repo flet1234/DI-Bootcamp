@@ -58,6 +58,7 @@ function addTask(e){
         document.getElementsByClassName('listTasks')[0].appendChild(newTask)
         id++
         console.log(tasks);
+        document.getElementsByTagName('input')[0].value=''
         if (document.getElementsByClassName('listTasks')[0].innerHTML.trim() != ''){
             document.getElementsByClassName('listTasks')[0].style.visibility='visible'
         }
