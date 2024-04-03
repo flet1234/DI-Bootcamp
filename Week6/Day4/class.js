@@ -1,15 +1,16 @@
-let arr=['1,2,3,5,6','2,5,2,4,2']
+let jsonList = document.getElementById('jsonlist');
+let btn = document.getElementById('send')
+btn.addEventListener('click',sendForm)
 
-let x = arr[0].replace(/,/g,'')
-console.log(z);
-let y = arr[1].replace(/,/g,'')
-let newAr=[]
-for (i of x){
-    for(q of y){
-        if (i==q){
-            newAr.push(i)
-            break
-        }
-    }
+function sendForm(e){
+    e.preventDefault();
+    let name = document.getElementById('name').value;
+    document.getElementById('name').value = '';
+    let lastName = document.getElementById('lastname').value;
+    document.getElementById('lastname').value = '';
+    let obj = {name, lastName};
+    let objJSON = document.createElement('p')
+
+    objJSON.innerHTML = JSON.stringify(obj)
+    jsonList.appendChild(objJSON)
 }
-console.log(newAr);

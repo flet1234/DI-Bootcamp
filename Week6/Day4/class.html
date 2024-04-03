@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="htmlForms.js" defer></script>
 </head>
 <body>
-    <h2>add user</h2>
-    <form method="Get" action="https://users-18kl.onrender.com/users">
-    name<input type="text" name="users">
-    <!-- email<input type="text" name="email">
-    username<input type="text" name="username"> -->
-    <input type="submit" value="submit">
+    <form method="GET">
+        <input id="name" type="text" name="name">
+        <input id="lastname"  type="text" name="lastname">
+        <input id="send" type="submit" value="Send">
     </form>
-    <script src="class.js"></script>
+    <div id="jsonlist"></div>
 </body>
 </html>
