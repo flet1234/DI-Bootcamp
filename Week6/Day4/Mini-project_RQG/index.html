@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body id="root">
+    <form onsubmit="addQuote(event)">
+        <label for="Quote">Quote: </label><input name="quote" type="text"><br>
+        <label for="Author">Author: </label><input name="author" type="text"><br>
+        <button type="submit">Send</button>
+    </form>
+    <section>
+        <div id="quoteCard">
+            
+        </div> 
+        <button style="visibility: hidden;" id="next" onclick="nextQ(event)">Next</button>
+        <button style="visibility: hidden;" id="previous" onclick="previousQ(event)">Previous</button>
+        <button style="visibility: hidden;" id="hml" onclick="howManyLetters(event)">How many letters?</button>
+        <button style="visibility: hidden;" id="hmls" onclick="howManyLettersWithoutSpaces(event)">How many letters without spaces?</button>
+        <button style="visibility: hidden;" id="hmw" onclick="howManyWords(event)">How many words?</button>
+        <button style="visibility: hidden;" id="like" onclick="addLike(event)">Give it a Like</button>
+    </section>
+    <label for="">Search: </label><input oninput="changeButton(event)" type="text" id="search">
+    <button  onclick="generateQuote(event)" id="generate">Generate Random Quote</button>   
+    
+   
+    <script src="script.js"></script>
+</body>
+</html>
