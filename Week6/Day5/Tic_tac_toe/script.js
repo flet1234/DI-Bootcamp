@@ -166,7 +166,7 @@ function NotSoEasyI(){
         field[6]=iside
     } else if (field[8]==' '){
         field[8]=iside
-    } 
+    } else {easyI()}
    
 }
 
