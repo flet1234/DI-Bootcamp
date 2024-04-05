@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">   
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tic Tac Toe Game</h1>
+    <p>Choose your side: X - Easy mode, O - Hard mode</p>
+    <div id="side">
+        <button id="sidex" onclick="sideX(event)"><img width="70%" src="/Week6/Day5/Tic_tac_toe/letter-x_4553028.png" alt=""></button>
+        <button id="sideo" onclick="sideO(event)"><img width="70%" src="/Week6/Day5/Tic_tac_toe/opera_220602.png"> </button>
+    </div>
+    
+    <section>
+        <button class="field" name="0" id="box0" onclick="makeMove(event)"></button>
+        <button class="field" name="1" id="box1" onclick="makeMove(event)"></button>
+        <button class="field" name="2" id="box2" onclick="makeMove(event)"></button>
+        <button class="field" name="3" id="box3" onclick="makeMove(event)"></button>
+        <button class="field" name="4" id="box4" onclick="makeMove(event)"></button>
+        <button class="field" name="5" id="box5" onclick="makeMove(event)"></button>
+        <button class="field" name="6" id="box6" onclick="makeMove(event)"></button>
+        <button class="field" name="7" id="box7" onclick="makeMove(event)"></button>
+        <button class="field" name="8" id="box8" onclick="makeMove(event)"></button>
+    </section>
+        <article>
+            <h2></h2></div>
+            <button onclick="restart(event)" id="restart">RESTART?</button>
+        </article>
+    <script src="script.js"></script>
+</body>
+</html>

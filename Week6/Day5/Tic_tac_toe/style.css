@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:indigo;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+section{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+}
+section button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 130px;
+    margin: auto;
+    border: none;
+}
+h1{
+    font-size: 40px;
+    color: yellow;
+    margin-top: 20px;
+}
+p{
+    font-size: 20px;
+    color: greenyellow;
+    font-weight: bold;
+}
+#side{
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+}
+#sidex{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+}
+#sidex :hover{
+    cursor: pointer;
+}
+#sideo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+}
+#sideo :hover{
+    cursor: pointer;
+}
+#restart{
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border: solid 1px yellow;
+    border-radius: 10px;
+    color: greenyellow;
+}
+#restart:hover{
+    cursor: pointer;
+}
+section button:hover{
+    cursor: pointer;
+}
+#box4{
+    border: solid black 2px;
+}
+#box0{
+    border-bottom: solid black 2px;
+    border-right: solid black 2px;
+}
+#box1{
+    border: solid black 2px;
+    border-top: none;
+}
+#box2{
+    border-left: solid black 2px;
+    border-bottom: solid black 2px;
+}
+#box3{
+    border: solid black 2px;
+    border-left: none;
+}
+#box5{
+    border: solid black 2px;
+    border-right: none;
+}
+#box6{
+    border-top: solid black 2px;
+    border-right: solid black 2px;
+}
+#box7{
+    border: solid black 2px;
+    border-bottom: none
+}
+#box8{
+    border-top: solid black 2px;
+    border-left: solid black 2px;
+}
+#restart{
+    visibility: hidden;
+}
+.xoimage{
+    width: 70%;
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+    color: yellow;
+}
