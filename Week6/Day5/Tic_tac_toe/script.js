@@ -67,7 +67,7 @@ function makeMove(e){
             
                 hardcoreI()
                 if (field.filter(item => item === iside).length===counter){
-                    easyI()
+                    NotSoEasyI()
                 }
             }
             painter()
@@ -153,6 +153,23 @@ function easyI(){
     let random=Math.round(Math.random()*(variants.length-1))
     field[variants[random]]=iside
 }
+
+function NotSoEasyI(){
+    let variants=[]
+    if (field[4]==' '){
+        field[4]=iside
+    } else if (field[0]==' '){
+        field[0]=iside
+    } else if (field[2]==' '){
+        field[2]=iside
+    } else if (field[6]==' '){
+        field[6]=iside
+    } else if (field[8]==' '){
+        field[8]=iside
+    } 
+   
+}
+
 
 function restart(){
     location.reload()
