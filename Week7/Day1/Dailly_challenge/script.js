@@ -141,7 +141,7 @@ function toMorse(morseJS) {
 function joinWords(morseTranslation) {
     let root=document.getElementById('root')
     morseTranslation.forEach(element => {
-        root.innerHTML+=`${element}<br>hellohel`
+        root.innerHTML+=`${element}<br>`
     });
 }
 
