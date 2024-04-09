@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>pokedexApp</title>
+</head>
+<body>
+    <section>
+        <article id="top">
+            <img id="logo" src="/Week7/Day3/Pokedex_app/resources/logo.png" alt="Pokemon logo">
+            <div id="view">
+                <div id="load">
+                    <iframe src="https://giphy.com/embed/U2nN0ridM4lXy" width="280" height="100px" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p style="color: yellow;">Loading...</p>
+                </div>
+                
+            </div>
+            <div id="how">
+               <h3>How to use: </h3> 
+               <p>1-Press the green button to get a random Pokemon</p>
+               <p>2-Press the left and right buttons
+                 to see previous and next Pokemon</p>
+            </div>
+        </article>
+        <article id="bottom">
+            <button id="left" onclick="left(event)"></button>
+            <button id="right" onclick="right(event)"></button>
+            <div id="info">
+
+            </div>
+            <button id="getPoc" onclick="getPoc(event)"></button>
+        </article>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
