@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-size: cover;
+    background-image: url(/Week7/Day3/Daily_challenge/money-496229_1920.jpg);
+}
+form{
+    padding: 20px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(5, 153, 227, 0.774);
+    gap: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+h1{
+    color:white
+}
+h2{
+    color: white;
+}
+button{
+    border-radius: 10px;
+    padding: 7px;
+    border:  rgba(5, 153, 227, 0.774) solid 1px;
+    background-color: white;
+}
+button:hover{
+    border-radius: 10px;
+    padding: 7px;
+    border:  rgba(5, 153, 227, 0.774) solid 1px;
+    background-color: rgb(219, 219, 219);
+}
+#result{
+    color: white;
+    font-size: 20px;
+}
+#swapCur{
+    margin-bottom: 10px;
+}
