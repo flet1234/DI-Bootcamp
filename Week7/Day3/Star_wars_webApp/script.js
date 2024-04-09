@@ -1,4 +1,5 @@
 async function getInfo(e) {
+    try { 
     let load=document.getElementById('load')
     let root=document.getElementById('info')
     root.style.display='none'
@@ -33,4 +34,7 @@ async function getInfo(e) {
         <p>Gender: ${gender}</p>\n<p>Year of birth: ${bithYear}</p>\n
         <p>Homeworld :${planet}</p>`
     }
+    } catch (error) {
+        console.log(error);
+    } 
 }
