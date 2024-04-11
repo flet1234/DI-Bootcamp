@@ -8,6 +8,6 @@ app.listen(5000,()=>{
 
 app.get('/data', async (req,res)=>{
     let data = await fetchPosts('https://jsonplaceholder.typicode.com/posts')
-    res.send(data)
+        console.log('All send');
+        res.send(data)
 })
-
