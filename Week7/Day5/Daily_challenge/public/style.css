@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-image: url('./resources/puzzle-3223941_1920.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    margin: 50px auto;
+}
+
+#start{
+    margin:50px auto 0px auto;
+    width: 100px;
+    height: 20px;
+    border-radius: 5px;
+
+}
+h2,h1{
+    background-color: rgba(255, 255, 255, 0.724);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#emoji{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.724);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 18px; 
+    font-weight: bold;
+}
+#bottom{
+    display: flex;
+    margin-top: 10px;
+}
+#names{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fefefe9d;
+    border-radius: 5px;
+    cursor: pointer;
+}
+label:hover{
+    background-color: #08ed3a;
+}
+label:hover{
+    background-color: #08ed3a;
+}
+input[type="radio"]:checked + label {
+    background-color: #007bff;
+}
+
+input[type="radio"]{
+    display: none;
+}
+#send {
+    margin:auto;
+    width: 100px;
+    height: 20px;
+    border-radius: 5px;
+}
+#score{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ffffffd2;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+#restart {
+    margin:auto;
+    width: 100px;
+    height: 20px;
+    border-radius: 5px;
+}
+#leaderboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ffffffd2;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.rules{
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.724);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}

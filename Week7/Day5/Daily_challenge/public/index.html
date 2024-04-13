@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Emoji game</title>
+
+</head>
+<body>
+    <section id="root">
+        <p class="rules">Rules: You have 10 second to guess the name of emoji</p>
+        <p class="rules">You have 3 lives</p>
+        <div id="timer">
+            
+            <button id="start" onclick="start(event)">Start</button>
+        </div>
+        <div id="lives">
+            <img  src="./resources/299063_heart_icon.png" alt="live count">
+            <img  src="./resources/299063_heart_icon.png" alt="live count">
+            <img  src="./resources/299063_heart_icon.png" alt="live count">
+        </div>
+        <div id="emoji"></div>
+        <form onsubmit="sendResult(event)">
+            <div id="names">
+
+            </div>
+            <button style="display: none;" id="send" type="submit">Send</button>
+        </form>
+        <p id="score"></p>
+    </section>
+    <script src="game.js"></script>
+</body>
+</html>
