@@ -27,8 +27,23 @@ const _registerUser = async (body,usernameAndHash) => {
     }
 }
 
-const _updateUser = (id,body) => {
-    return db('users').update(body).where({id}).returning(['id','email','username','first_name','last_name'])
+const _updateUser = async (id,body,username) => {
+    let trx
+    try{
+        const result = await db.transaction(async (transaction)=>{
+            trx = transaction
+            await trx('hashpwd').update(body).where({username})
+            const insertedUser = await trx('users').update(body).where({id}).returning(['id','email','username','first_name','last_name'])
+            return insertedUser
+        })
+        await trx.commit()
+        return result
+    } catch (error) {
+        if(trx){
+            await trx.rollback()
+        }
+        throw error
+    }
 }
 
 const _loginUser = (username) => {

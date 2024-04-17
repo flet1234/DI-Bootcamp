@@ -43,7 +43,8 @@ async function registerUser(req,res) {
 }
 
 function updateUser(req,res) {
-    _updateUser(parseInt(req.params.id),req.body).then(data=>{
+    let {username} = req.body
+    _updateUser(parseInt(req.params.id),req.body,username).then(data=>{
         res.json(data)
     })
 }
