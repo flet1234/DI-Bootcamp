@@ -8,19 +8,19 @@ class DemoCarousel extends Component {
         return (
             <Carousel>
                 <div>
-                    <img style={{width:'250px'}} src="./assets/honk.jpg" />
+                    <img src="./assets/honk.jpg" />
                     <p className="legend">Hong Kong</p>
                 </div>
                 <div>
-                    <img style={{width:'250px'}} src="./assets/kakao.webp" />
+                    <img src="./assets/kakao.webp" />
                     <p className="legend">Makao</p>
                 </div>
                 <div>
-                    <img style={{width:'250px'}} src=".\assets\newyolk.webp" />
+                    <img src=".\assets\newyolk.webp" />
                     <p className="legend">New York</p>
                 </div>
                 <div>
-                    <img style={{width:'250px'}} src=".\assets\tower.webp" />
+                    <img src=".\assets\tower.webp" />
                     <p className="legend">Japan</p>
                 </div>
             </Carousel>
