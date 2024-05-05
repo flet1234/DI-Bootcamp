@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+    width: 500px;
+}
+#startButton{
+    margin-top: 220px;
+
+}
+#colorPick{
+    margin-top: 220px;
+    display: none;
+}

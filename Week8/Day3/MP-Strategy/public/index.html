@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Baseshmase</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Welcome to Base Shmase 9000</h1>
+        <section id="gameField">
+            
+        </section>
+        <section id="colorPick">
+            <form onsubmit="pickColor(event)">
+                <label >Blue</label>
+                <input type="radio" name="color" value="blue">
+                <label >Red</label>
+                <input type="radio" name="color" value="red">
+                <label >Yellow</label>
+                <input type="radio" name="color" value="yellow">
+                <label >green</label>
+                <input type="radio" name="color" value="green">
+                <button type="submit">Take this color</button>
+            </form>
+        </section>
+        <button id="startButton" onclick="startMatch(event)">Start</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
