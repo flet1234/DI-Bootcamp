@@ -17,11 +17,11 @@ function App() {
     setLanguages(newArray)
   }
   return (
-    <>
+    <div style={{width:'200px',margin:'20px auto',backgroundColor:'aliceblue',display:'flex',flexDirection:'column'}}>
     {languages.map((item,i)=>{
-      return <div key={i}>{item.votes}  {item.name}  <button onClick={()=>voter(i)}>Click Here</button></div>
+      return <div style={{display:'flex',justifyContent:'space-between',border:'solid 1px black', margin:'5px', textShadow:'1px 1px'}}  key={i}>{item.votes}  {item.name}  <button style={{border:'none',color:'green',backgroundColor:'aliceblue'}} onClick={()=>voter(i)}>Click Here</button></div>
     })}
-    </>
+    </div>
   );
 }
 
