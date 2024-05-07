@@ -1,4 +1,5 @@
 import Forms from './components/Forms'
+import Forms2 from './components/Forms2';
 import './App.css';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Forms/>
+        <Forms2/>
       </header>
     </div>
   );
