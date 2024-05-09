@@ -12,7 +12,7 @@ const Root = () => {
 
   const navigate = useNavigate()
 
-  const handleSubmit = async(e) => {
+  const handleSubmit = (e) => {
     e.preventDefault()
     navigate(`/${query}`)
 
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
     errorElement:<h1>Somethng went wrong</h1>,
     children:[
       {
-        path:'/:id',
+        path:'/:id/',
         element:<Gallery />
       },
     ]
