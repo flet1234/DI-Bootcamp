@@ -38,9 +38,9 @@ function App() {
       <BrowserRouter>
       <ColorSchemesExample/>
         <Routes>
-          <Route path="/" element={<ErrorBoundary><HomeScreen/></ErrorBoundary>}/>
-          <Route path="/profile" element={<ErrorBoundary><ProfileScreen/></ErrorBoundary>}/>
-          <Route path="/shop"  element={<ErrorBoundary><ShopScreen/></ErrorBoundary>}/>
+          <Route path="/" element={<ErrorBoundary key={1}><HomeScreen/></ErrorBoundary>}/>
+          <Route path="/profile" element={<ErrorBoundary key={2}><ProfileScreen/></ErrorBoundary>}/>
+          <Route path="/shop"  element={<ErrorBoundary key={3}><ShopScreen/></ErrorBoundary>}/>
         </Routes>
       </BrowserRouter>
       <PostList/>
