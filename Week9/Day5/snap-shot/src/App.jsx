@@ -6,7 +6,8 @@ import { Link, createBrowserRouter, RouterProvider, Outlet, useNavigate } from '
 import { useEffect } from 'react'
 
 const Root = () => {
-  const [query,setQuery]=useState('')
+  const [query,setQuery]=useState('space')
+  const [query1,setQuery1]=useState('30')
   
   
 
@@ -14,25 +15,29 @@ const Root = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    navigate(`/${query}`)
+    navigate(`/${query}/${query1}`)
 
   }
 
   useEffect(()=>{
-    navigate(`/${query}`)
+    navigate(`/${query}/${query1}`)
   },[])
 
   return(
     <>
     <h1>SnapShot</h1>
       <form onSubmit={handleSubmit}>
-        <input onChange={(e)=>setQuery(e.target.value)} placeholder='Search...'/><button type='submit' >{<img style={{width:'30px'}} src={searchIcon} alt='search icon'/>}</button>
+        <div>
+          <input onChange={(e)=>setQuery(e.target.value)} placeholder='Search...'/><br/>
+          <input type="number" onChange={(e)=>setQuery1(e.target.value)} placeholder='Quantity? default is 30'/>
+        </div>
+        <button type='submit' >{<img style={{width:'20px'}} src={searchIcon} alt='search icon'/>}</button>
       </form>
       <div></div>
-    <Link to={'/sun'}>Sun  </Link>
-    <Link to={'/sleep'}>Sleep  </Link>
-    <Link to={'/hulahoop'}>Hulahoop  </Link>
-    <Link to={'/pain'}>Pain</Link>
+    <Link className='link' to={'/sun/30'}>Sun  </Link>
+    <Link className='link' to={'/sleep/30'}>Sleep  </Link>
+    <Link className='link' to={'/hulahoop/30'}>Hulahoop  </Link>
+    <Link className='link' to={'/pain/30'}>Pain</Link>
      <Outlet/>
     </>
   )
@@ -46,7 +51,7 @@ const router = createBrowserRouter([
     errorElement:<h1>Somethng went wrong</h1>,
     children:[
       {
-        path:'/:id/',
+        path:'/:id/:num',
         element:<Gallery />
       },
     ]
