@@ -9,14 +9,20 @@ class Exercise extends React.Component{
             padding: "10px",
             fontFamily: "Arial"
           };
-        return  <>
+        return  (<>
                 <h1 style={style_header}>This is a Header</h1>
                 <p className="para">This is a paragraph</p>
                 <a>This is a link</a>
-                <form>this is a form</form>
-                <image>this is an image</image>
-                <list>this is a list</list>
+                <form>
+                  <input placeholder="this is a form"/><label>Heheh</label><br/>
+                  <input type="submit" value={Submit}/>
+                </form>
+                <img src='' alt="this is an image"/>
+                <ul>
+                  <li>this is a list</li>
+                </ul>
                 </>
+                )
     }
 }
 
