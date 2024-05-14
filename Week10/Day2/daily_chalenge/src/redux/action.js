@@ -2,6 +2,7 @@ export const ADDING = 'adding'
 export const TOGGLE = 'toggle'
 export const DELETE = 'delete'
 export const EDIT = 'edit'
+export const TOGGLEEDIT = 'toggleedit'
 
 
 export const adding = (value) => {
@@ -24,7 +25,13 @@ export const deleting = (value) => {
 }
 export const edit = (value) => {
     return {
-        type:DELETE,
+        type:EDIT,
+        payload:value
+    }
+}
+export const toggleedit = (value) => {
+    return {
+        type:TOGGLEEDIT,
         payload:value
     }
 }

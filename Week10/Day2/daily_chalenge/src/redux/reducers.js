@@ -1,9 +1,10 @@
-import { ADDING, DELETE, TOGGLE , EDIT } from "./action";
+import { ADDING, DELETE, TOGGLE , EDIT, TOGGLEEDIT } from "./action";
 
 const initialState = {
     days:[{ date:'2024-05-08',
-            tasks:[{task:'pukat',
-                    complete:false
+            tasks:[{task:'Make some task',
+                    complete:false,
+                    edit:false
             }]
     }]
 }
@@ -22,7 +23,8 @@ export const reducer = (state = initialState,action) => {
                             {
                                 id: counter,
                                 task: action.payload.task,
-                                complete: false
+                                complete: false,
+                                edit:false
                             }
                         ]
                     };
@@ -61,15 +63,27 @@ export const reducer = (state = initialState,action) => {
                 })  
                 return {...state,days:newToggledDays}
         case EDIT:
-            let newEditedDays = state.days.map(item => {
-                item.tasks.map(task => {
-                    if(task.id === action.payload.id){
-                        return {...task, task:action.payload.task}
-                    }
-                    return task
-                })  
-                })  
-                return {...state,days:newEditedDays}
+            let newEditedDays = state.days.map(day => {
+               let newEditedTasks = day.tasks.map(task => {
+                if(task.id === action.payload.id) {
+                    return {...task, task : action.payload.text}
+                }
+                return task
+               })
+               return {...day, tasks: newEditedTasks
+               }})
+               return {...state, days : newEditedDays}
+        case TOGGLEEDIT:
+        let newToggledEditDays = state.days.map(day => {
+            let newToggledEditTasks = day.tasks.map(item => {
+                if(item.id === action.payload) {
+                    return {...item, edit : !item.edit}
+                }
+                return item
+        })
+            return {...day, tasks: newToggledEditTasks}
+            })  
+            return {...state,days:newToggledEditDays}
         default:
             return state
     }

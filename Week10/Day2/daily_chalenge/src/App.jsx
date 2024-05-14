@@ -1,4 +1,4 @@
-import { adding ,toggle,deleting,edit } from './redux/action'
+import { adding ,toggle,deleting,edit ,toggleedit} from './redux/action'
 import { useDispatch, useSelector } from 'react-redux'
 import { useState , useRef, useEffect } from 'react'
 import './App.css'
@@ -23,10 +23,11 @@ function App() {
       return (result[0].tasks.map((item,i)=> 
         {return (<div key={i}>
         <ul >
-        <li>Name: {item.task}</li>
+        {item.edit ? <input placeholder='Update task' defaultValue={item.task} onChange={(e)=> dispatch(edit({text:e.target.value, id:item.id}))}/> : <li>Task: {item.task}</li>}
         {item.complete ? <li>Complete: Yes</li>:<li>Complete: No</li> }
         </ul><br/>
         <button onClick={()=>dispatch(toggle(item.id))}>Change completion</button>
+        {item.edit ? <button onClick={()=>dispatch(toggleedit(item.id))}>Update</button> : <button onClick={()=>dispatch(toggleedit(item.id))}>Edit</button>}
         <button onClick={()=>dispatch(deleting(item.id))}>Delete</button>
         </div>)}))
     } else{
