@@ -16,31 +16,12 @@ export const reducer = (state = initialState,action) => {
         case ADDING:
             let newDays = state.days.map(day => {
                 if (day.date === action.payload.date) {
-                    return {
-                        ...day,
-                        tasks: [
-                            ...day.tasks,
-                            {
-                                id: counter,
-                                task: action.payload.task,
-                                complete: false,
-                                edit:false
-                            }
-                        ]
-                    };
+                    return {...day,tasks: [...day.tasks,{id: counter,task: action.payload.task,complete: false,edit:false}]};
                 }
                 return day;
             });
             if (!newDays.some(day => day.date === action.payload.date)) {
-                newDays.push({
-                    date: action.payload.date,
-                    tasks: [
-                        {
-                            id: counter,
-                            task: action.payload.task,
-                            complete: false
-                        }
-                    ]
+                newDays.push({date: action.payload.date,tasks: [{id: counter,task: action.payload.task,complete: false}]
                 });
             }
             counter++; 
