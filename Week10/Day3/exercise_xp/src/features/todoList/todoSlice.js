@@ -26,7 +26,7 @@ export const todoSlice = createSlice({
         deleteTask:(state,action)=>{
             const dayIndex = state.days.findIndex(item=>item.day === action.payload.date)
             const taskIndex = state.days[dayIndex].tasks.findIndex(item=> item.id === action.payload.id)
-            state.days[dayIndex].tasks.splice(taskIndex)
+            state.days[dayIndex].tasks.splice(taskIndex,1)
         },
         toggleTask:(state,action)=>{
             const dayIndex = state.days.findIndex(item=>item.day === action.payload.date)
