@@ -208,7 +208,7 @@ Hello()
 // Create an overloaded function greet that can either take a name and greet the person, or take no arguments and return a default greeting.
 // -->
 
-const greet = (name?:string) => {
+const greet = (name?:string):string => {
     if(name){
         return `Hi ${name}`
     } else {
