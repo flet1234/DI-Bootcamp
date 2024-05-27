@@ -1,10 +1,38 @@
-import Navbar from './components/Navbar'
+import About from './components/About'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import Error from './components/Error'
 import './App.css'
-import Footer from './components/Footer'
+
 import MainPage from './components/MainPage'
-import {Link , createBrowserRouter, RouterProvider, Outlet, useNavigate } from 'react-router-dom'
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 
+const Root = () => {
+  
+  return (
+    <>
+      <MainPage/>
+    </>
+  )
+}
+
+const router = createBrowserRouter([
+  {
+    path:'/',
+    element:<Root/>,
+    errorElement:<Error/>,
+  },{
+    path:'/About',
+    element:<About/>
+  },{
+    path:'/Projects',
+    element:<Projects/>
+  },{
+    path:'/Contact',
+    element:<Contact/>
+  }
+])
 
 
 
@@ -12,9 +40,7 @@ function App() {
   
   return (
     <>
-      <Navbar/>
-      <MainPage/>
-      <Footer/>
+      <RouterProvider router={router}/>
     </>
   )
 }
